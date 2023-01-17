@@ -1,76 +1,200 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Test Questions for Field Study With Answers</h1>
 
-<h1>Test Questions for Field Study With Answers</h1>
+    <h2>Multiple Choice Question 1</h2>
+    <div>
+      <p>What does pattern <code>\w</code> mean?</p>
+      <form>
+        <input type="radio" disabled />
+        <label>A. Any lowercase letter</label><br />
+        <input type="radio" disabled />
+        <label>B. Any lowercase or uppercase letter</label><br />
+        <input type="radio" disabled checked />
+        <label>C. Any lowercase or uppercase letter, or underscore</label><br />
+        <input type="radio" disabled />
+        <label>D. A word consisting of uppercase or lowercase letters</label
+        ><br />
+      </form>
+    </div>
+    <br />
 
-<h2>Multiple Choice Question 1</h2>
-  <div>
-    <p>What does pattern <code>\w</code> mean?</p>
-    <form>
-        <input type="radio" disabled>
-        <label>A. Any lowercase letter</label><br>
-        <input type="radio" disabled>
-        <label>B. Any lowercase or uppercase letter</label><br>
-        <input type="radio" disabled checked>
-        <label>C. Any lowercase or uppercase letter, or underscore</label><br>
-        <input type="radio" disabled>
-        <label>D. A word consisting of uppercase or lowercase letters</label><br>
-    </form>
-  </div>
-<br>
+    <h2>Multiple Choice Question 2</h2>
 
-<h2>Multiple Choice Question 2</h2>
+    <h3>Version A</h3>
+    <div>
+      <p>
+        Which one of the following patterns should I use to treat
+        "<code>abc</code>" as a group, but not make <code>re.findall</code> only
+        return the content in the group?
+      </p>
+      <form>
+        <input type="radio" disabled />
+        <label>A. <code>[abc]</code></label
+        ><br />
+        <input type="radio" disabled />
+        <label>B. <code>[^abc]</code></label
+        ><br />
+        <input type="radio" disabled />
+        <label>C. <code>(abc)</code></label
+        ><br />
+        <input type="radio" disabled checked />
+        <label>D. <code>(?:abc)</code></label
+        ><br />
+      </form>
+    </div>
+    <h3>Version B</h3>
+    <div>
+      <p>
+        Which one of the following patterns should I use to treat
+        "<code>123</code>" as a group, but not make <code>re.findall</code> only
+        return the content in the group?
+      </p>
+      <form>
+        <input type="radio" disabled />
+        <label>A. <code>[123]</code></label
+        ><br />
+        <input type="radio" disabled />
+        <label>B. <code>[^123]</code></label
+        ><br />
+        <input type="radio" disabled />
+        <label>C. <code>(123)</code></label
+        ><br />
+        <input type="radio" disabled checked />
+        <label>D. <code>(?:123)</code></label
+        ><br />
+      </form>
+    </div>
+    <br />
 
-<h3>Version A</h3>
-  <div>
-    <p>Which one of the following patterns should I use to treat "<code>abc</code>" as a group, but not make <code>re.findall</code> only return the content in the group?</p>
-    <form>
-        <input type="radio" disabled>
-        <label>A. <code>[abc]</code></label><br>
-        <input type="radio" disabled>
-        <label>B. <code>[^abc]</code></label><br>
-        <input type="radio" disabled>
-        <label>C. <code>(abc)</code></label><br>
-        <input type="radio" disabled checked>
-        <label>D. <code>(?:abc)</code></label><br>
-    </form>
-  </div>
-<br>
-<h3>Version B</h3>
-<div>
-    <p>Which one of the following patterns should I use to treat "<code>123</code>" as a group, but not make <code>re.findall</code> only return the content in the group?</p>
-    <form>
-        <input type="radio" disabled>
-        <label>A. <code>[123]</code></label><br>
-        <input type="radio" disabled>
-        <label>B. <code>[^123]</code></label><br>
-        <input type="radio" disabled>
-        <label>C. <code>(123)</code></label><br>
-        <input type="radio" disabled checked>
-        <label>D. <code>(?:123)</code></label><br>
-    </form>
-  </div>
-<br>
+    <h2>Multiple Choice Multiple Answer Question 1</h2>
+    <h3>Version A</h3>
+    <div>
+      <p>
+        Which of the following options will the regular expression
+        <code>^X-.*: [0-9.]+</code> match?
+      </p>
+      <form>
+        <input type="checkbox" disabled />
+        <label>A. <code>X-DSPAM-Probability: Accurate</code></label
+        ><br />
+        <input type="checkbox" disabled checked />
+        <label>B. <code>X-DSPAM-Confidence: 0.8475</code></label
+        ><br />
+        <input type="checkbox" disabled />
+        <label>C. <code>X Wolverine-Confidence: 0.53</code></label
+        ><br />
+        <input type="checkbox" disabled checked />
+        <label>D. <code>X-Wolverine-Confidence: 1</code></label
+        ><br />
+      </form>
+    </div>
+    <h3>Version B</h3>
+    <div>
+      <p>
+        Which of the following options will the regular expression
+        <code>^Z-.*: [a-z.]+</code> match?
+      </p>
+      <form>
+        <input type="checkbox" disabled />
+        <label>A. <code>Z-ADMIN-Percentage: 84.75</code></label
+        ><br />
+        <input type="checkbox" disabled checked />
+        <label>B. <code>Z-ADMIN-Username: k.szdw</code></label
+        ><br />
+        <input type="checkbox" disabled />
+        <label>C. <code>Z Wolverine-Username: o.zc</code></label
+        ><br />
+        <input type="checkbox" disabled checked />
+        <label>D. <code>Z-Wolverine-Username: x</code></label
+        ><br />
+      </form>
+    </div>
+    <br />
 
-<h2>Multiple Choice Multiple Answer Question 1</h2>
-<h3>Version A</h3>
-<div>
-    <p>Which of the following options will the regular expression <code>^X-.*: [0-9.]+</code> match?</p>
-    <form>
-        <input type="checkbox" disabled>
-        <label>A. <code>X-DSPAM-Probability: Accurate</code></label><br>
-        <input type="checkbox" disabled checked>
-        <label>B. <code>X-DSPAM-Confidence: 0.8475</code></label><br>
-        <input type="checkbox" disabled>
-        <label>C. <code>X Wolverine-Confidence: 0.53</code></label><br>
-        <input type="checkbox" disabled checked>
-        <label>D. <code>X-Wolverine-Confidence: 1</code></label><br>
-    </form>
-  </div>
-<br>
-<h3>Version B</h3>
+    <h2>Multiple Choice Multiple Answer Question 2</h2>
+    <h3>Version A</h3>
+    <div>
+      <p>
+        Which of the following options will the following regular expression
+        match?
+      </p>
+      <p><code>(\(\d{3}\)|\d{3}-)\d{3}-\d{4}</code></p>
+      <form>
+        <input type="checkbox" disabled />
+        <label>A. <code>123 456-7890</code></label
+        ><br />
+        <input type="checkbox" disabled checked />
+        <label>B. <code>123-456-7890</code></label
+        ><br />
+        <input type="checkbox" disabled checked />
+        <label>C. <code>(123)456-7890</code></label
+        ><br />
+        <input type="checkbox" disabled />
+        <label>D. <code>(123)-456-7890</code></label
+        ><br />
+      </form>
+    </div>
+    <h3>Version B</h3>
+    <div>
+      <p>
+        Which of the following options will the following regular expression
+        match?
+      </p>
+      <p><code>\w{2} \d{5}(\(\d{4}\)|-\d{4})</code></p>
+      <form>
+        <input type="checkbox" idisabled />
+        <label>A. <code>MI 12345 6789</code></label
+        ><br />
+        <input type="checkbox" disabled checked />
+        <label>B. <code>MI 12345-6789</code></label
+        ><br />
+        <input type="checkbox" disabled checked />
+        <label>C. <code>MI 12345(6789</code>)</label><br />
+        <input type="checkbox" disabled />
+        <label>D. <code>MI 12345-(6789</code>)</label><br />
+      </form>
+    </div>
+    <br />
 
-
-</body>
+    <h2>Text-Entry Regex Problem</h2>
+    <div>
+      <p>
+        What is the correct regular expression to match a URL with letters,
+        numbers, underscores and dots? A valid URL defined in this problem must
+        meet the following requirements:
+      </p>
+      <ol>
+        <li>
+          The URL consists of two or more strings made of letters, numbers, and
+          underscores.
+        </li>
+        <li>A dot is used in between the strings.</li>
+        <li>No two dots are allowed to appear consecutively.</li>
+      </ol>
+      <p>
+        For example, your regex should match URLs like:
+        <code>www.aBC.com</code>, <code>abc.com</code>,
+        <code>ab_c.de8f.com</code>
+        <br />
+        But your regex should not match: <code>abc</code>, <code>abc..com</code>
+      </p>
+      <form name="info" style="line-height: 30px">
+        <label for="stuid">One possible solution:</label>
+        <br />
+        <input
+          type="text"
+          id="stuid"
+          name="student-id"
+          style="width: 600px"
+          value="(\w+\.)+\w+"
+          disabled
+        /><br />
+      </form>
+    </div>
+  </body>
 </html>
