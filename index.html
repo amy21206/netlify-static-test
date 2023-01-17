@@ -2,7 +2,75 @@
 <html>
 <body>
 
-<h1>Hello World!</h1>
+<h1>Test Questions for Field Study With Answers</h1>
+
+<h2>Multiple Choice Question 1</h2>
+  <div>
+    <p>What does pattern <code>\w</code> mean?</p>
+    <form>
+        <input type="radio" disabled>
+        <label>A. Any lowercase letter</label><br>
+        <input type="radio" disabled>
+        <label>B. Any lowercase or uppercase letter</label><br>
+        <input type="radio" disabled checked>
+        <label>C. Any lowercase or uppercase letter, or underscore</label><br>
+        <input type="radio" disabled>
+        <label>D. A word consisting of uppercase or lowercase letters</label><br>
+    </form>
+  </div>
+<br>
+
+<h2>Multiple Choice Question 2</h2>
+
+<h3>Version A</h3>
+  <div>
+    <p>Which one of the following patterns should I use to treat "<code>abc</code>" as a group, but not make <code>re.findall</code> only return the content in the group?</p>
+    <form>
+        <input type="radio" disabled>
+        <label>A. <code>[abc]</code></label><br>
+        <input type="radio" disabled>
+        <label>B. <code>[^abc]</code></label><br>
+        <input type="radio" disabled>
+        <label>C. <code>(abc)</code></label><br>
+        <input type="radio" disabled checked>
+        <label>D. <code>(?:abc)</code></label><br>
+    </form>
+  </div>
+<br>
+<h3>Version B</h3>
+<div>
+    <p>Which one of the following patterns should I use to treat "<code>123</code>" as a group, but not make <code>re.findall</code> only return the content in the group?</p>
+    <form>
+        <input type="radio" disabled>
+        <label>A. <code>[123]</code></label><br>
+        <input type="radio" disabled>
+        <label>B. <code>[^123]</code></label><br>
+        <input type="radio" disabled>
+        <label>C. <code>(123)</code></label><br>
+        <input type="radio" disabled checked>
+        <label>D. <code>(?:123)</code></label><br>
+    </form>
+  </div>
+<br>
+
+<h2>Multiple Choice Multiple Answer Question 1</h2>
+<h3>Version A</h3>
+<div>
+    <p>Which of the following options will the regular expression <code>^X-.*: [0-9.]+</code> match?</p>
+    <form>
+        <input type="checkbox" disabled>
+        <label>A. <code>X-DSPAM-Probability: Accurate</code></label><br>
+        <input type="checkbox" disabled checked>
+        <label>B. <code>X-DSPAM-Confidence: 0.8475</code></label><br>
+        <input type="checkbox" disabled>
+        <label>C. <code>X Wolverine-Confidence: 0.53</code></label><br>
+        <input type="checkbox" disabled checked>
+        <label>D. <code>X-Wolverine-Confidence: 1</code></label><br>
+    </form>
+  </div>
+<br>
+<h3>Version B</h3>
+
 
 </body>
 </html>
